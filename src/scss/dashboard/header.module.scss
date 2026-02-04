@@ -1,0 +1,113 @@
+.header {
+  height: 80px;
+  padding: 0 20px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 9px 9px rgba(0, 0, 0, 0.05);
+}
+
+/* LEFT */
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 25px;
+}
+
+/* CENTER */
+.search {
+  display: flex;
+  align-items: center;
+  width: 400px;
+
+  input {
+    flex: 1;
+    height: 40px;
+    padding: 0 16px;
+    border: 1px solid #dcdfe5;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+    font-size: 14px;
+
+    &::placeholder {
+      color: #b0b4c1;
+    }
+  }
+
+  button {
+    width: 56px;
+    height: 40px;
+    border: none;
+    background: #39cdcc;
+    color: #ffffff;
+    border-radius: 0 8px 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    svg {
+      font-size: 18px;
+    }
+  }
+}
+
+/* RIGHT */
+.right {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.docs {
+  color: #213f7d;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.bell {
+  font-size: 20px;
+  color: #213f7d;
+  cursor: pointer;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.username {
+  font-size: 14px;
+  color: #213f7d;
+}
+
+@media (max-width: 768px) {
+  .search {
+    display: none;
+  }
+
+  .header {
+    padding: 0 20px;
+  }
+
+  .right {
+    gap: 16px;
+  }
+
+  .username {
+    display: none;
+  }
+}
